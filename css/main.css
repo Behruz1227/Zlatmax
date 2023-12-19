@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
 .topNavText:hover {
   color: #fff !important;
 }
@@ -11,6 +13,25 @@
   grid-row-gap: 0px;
 }
 
+.parent2 {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns:repeat(5, 2fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.parent3 {
+  margin-top: 10%;
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 .location {
    width: 110%;
 }
@@ -22,4 +43,73 @@
 }
 .korText{
   font-size: 12px;
+}
+.nav-link {
+  color: #fff !important;
+  transition: 0.3s !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+/* Apply white color to nav links */
+.nav-link:hover {
+  color: #ffd900 !important;
+}
+
+.nav-link:focus {
+  color: #ffd900 !important;
+}
+
+.page-1 {
+  background-image: url("../assets/pag-1Back.png");
+}
+
+.page-1Main {
+  width: 100%;
+  background-image: url("../assets/pichoqlar.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.mainTitle2 {
+  font-weight: 400;
+}
+
+.mainTitle3 {
+  width: 75%;
+}
+
+.page-1Button{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #dec527;
+padding: 10px 30px;
+border: solid #E8AA31 2px;
+-webkit-box-shadow: 0px 0px 51px 29px rgba(232, 170, 49, 0.2);
+-moz-box-shadow: 0px 0px 51px 29px rgba(232, 170, 49, 0.2);
+box-shadow: 0px 0px 51px 29px rgba(232, 170, 49, 0.2);
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+.page-1Button:hover{
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #E8AA31;
+border: solid 2px #E8AA31;
+}
+
+.page-1Child {
+  display: grid;
+  justify-items: center;
 }

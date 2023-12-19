@@ -2,8 +2,8 @@ doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="../../css/main.css")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="../../css/main.css")
         link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous")
         script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous")
         title Document
@@ -20,39 +20,75 @@ html(lang="en")
                     li.nav-item 
                         a.nav-link(href="#") Контакты
                 a.nav-link.float-end.navbar-text.topNavText(href="#") 
-                    img.me-3(src="../../assets/avatar.png", alt=".")/ Личный кабинет
+                    img.me-3(src="../../assets/avatar.png" alt=".")/ Личный кабинет
 
         nav.topNav.navbar.navbar-expand-lg
             Container.container
                 div.parent
                     div.navCenDiv 
-                        img.w-50(src="../../assets/logo.png", alt=".")/
+                        img.w-50(src="../../assets/logo.png" alt=".")/
                     div.navCenDiv.me-4 
-                       form.d-flex(role="search")
+                        form.d-flex(role="search")
                             input(type="search" placeholder="Search" aria-label="Search").form-control.me-2
                             button.btn.btn-outline-success Search
                     div.navCenDiv 
                         p
                     div.navCenDiv 
-                        img(src="../../assets/location.png", alt=".").location
+                        img(src="../../assets/location.png" alt=".").location
                     div.navCenDiv.d-flex.justify-content-end 
-                        img(src="../../assets/like.png", alt=".").like
+                        img(src="../../assets/like.png" alt=".").like
                     div.navCenDiv.d-flex
-                        img(src="../../assets/korzinka.png", alt=".").like.mb-3.ms-4
+                        img(src="../../assets/korzinka.png" alt=".").like.mb-3.ms-4
                         div.ms-3.mb-3.korText
                             span.d-block 0 р.
                             span Оформить заказ
-        
+
         nav.topNav.navbar.navbar-expand-lg.bg-dark.border-bottom.border-body(data-bs-theme="dark")
             Container.container
-                ul.navbar-nav.mb-2.mb-lg-0.w-100
-                    li.nav-item 
-                        a.nav-link(href="#") О нас
-                    li.nav-item 
-                        a.nav-link(href="#") Оплата и доставка
-                    li.nav-item 
-                        a.nav-link(href="#") Новости
-                    li.nav-item 
-                        a.nav-link(href="#") Контакты
+                ul.nav.mb-2.mb-lg-0.parent2.nav-underline.text-center
+                    li.nav-item.mx-5
+                        a.nav-link(href="#") Каталог ножей
+                    li.nav-item.mx-5
+                        a.nav-link(href="#") Клинковое оружие
+                    li.nav-item.mx-5
+                        a.nav-link(href="#") Сувенирные изделия
+                    li.nav-item.mx-5
+                        a.nav-link(href="#") Фонари ARMYTEK
+                    li.nav-item.mx-5
+                        a.nav-link(href="#") Сопуствующие товары
+        div.page-1
+            div.page-1Main
+                Container.container
+                    div.text-light.container
+                        div
+                            h2.mainTitle Интернет магазин сертифицированных  
+                            h2.mainTitle2 златоустовских ножей 
+                            p.mainTitle3.mt-4 
+                                b Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине 
+                                span представлен наиболее широкий выбор Златоустовских ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками. 
+                            button.page-1Button.mt-5 
+                                b Подробнее
+                        div.parent3
+                            .page-1Child 
+                                img(src="./assets/page-1Box1.png" alt="").w-25
+                                p.text-center Гарантия 100% возврата
+                                    br 
+                                    span денежных средств
+                            .page-1Child 
+                                img(src="./assets/page-1Box2.png" alt="").w-25
+                                p.text-center Доставка по России, 
+                                    br 
+                                    span Казахстану и Белоруссии
+                            .page-1Child 
+                                img(src="./assets/page-1Box3.png" alt="").w-25
+                                p.text-center Возможность оформление 
+                                    br 
+                                    span заказа без регистрации.
+                            .page-1Child 
+                                img(src="./assets/page-1Box4.png" alt="").w-25
+                                p.text-center Скидки постоянным 
+                                    br 
+                                    span покупателям. 
 
-                        
+
+
