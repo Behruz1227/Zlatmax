@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
+body {
+  background-color: beige;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: red;
+}
 
 .topNavText:hover {
   color: #fff !important;
@@ -16,7 +31,7 @@
 .parent2 {
   width: 100% !important;
   display: grid !important;
-  grid-template-columns:repeat(5, 2fr);
+  grid-template-columns: repeat(5, 2fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -26,24 +41,27 @@
   margin-top: 10%;
   width: 100% !important;
   display: grid !important;
-  grid-template-columns:repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   justify-items: center;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+
 .location {
-   width: 110%;
+  width: 110%;
 }
 
-.like  {
+.like {
   cursor: pointer;
   width: 15%;
   height: 60%;
 }
-.korText{
+
+.korText {
   font-size: 12px;
 }
+
 .nav-link {
   color: #fff !important;
   transition: 0.3s !important;
@@ -61,12 +79,18 @@
 }
 
 .page-1 {
-  background-image: url("../assets/pag-1Back.png");
+  background-image: url("../assets/page1/pag-1Back.png");
+}
+
+.dark {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.722);
 }
 
 .page-1Main {
   width: 100%;
-  background-image: url("../assets/pichoqlar.png");
+  background-image: url("../assets/page1/pichoqlar.png");
   background-size: cover;
   background-position: top;
 }
@@ -79,37 +103,87 @@
   width: 75%;
 }
 
-.page-1Button{
-
-font-family: Roboto, sans-serif;
-font-weight: 0;
-font-size: 14px;
-color: #fff;
-background-color: #dec527;
-padding: 10px 30px;
-border: solid #E8AA31 2px;
--webkit-box-shadow: 0px 0px 51px 29px rgba(232, 170, 49, 0.2);
--moz-box-shadow: 0px 0px 51px 29px rgba(232, 170, 49, 0.2);
-box-shadow: 0px 0px 51px 29px rgba(232, 170, 49, 0.2);
-border-radius: 50px;
-transition : 1000ms;
-transform: translateY(0);
-display: flex;
-flex-direction: row;
-align-items: center;
-cursor: pointer;
+.page-1Button {
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #dec527;
+  padding: 10px 30px;
+  border: solid #E8AA31 2px;
+  box-shadow: 0px 0px 51px 29px rgba(232, 170, 49, 0.2);
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
 }
 
-.page-1Button:hover{
-transition : 1000ms;
-padding: 10px 50px;
-transform : translateY(-0px);
-background-color: #fff;
-color: #E8AA31;
-border: solid 2px #E8AA31;
+.page-1Button:hover {
+  transition: 1000ms;
+  padding: 10px 50px;
+  transform: translateY(0px);
+  background-color: #fff;
+  color: #E8AA31;
+  border: solid 2px #E8AA31;
 }
 
 .page-1Child {
   display: grid;
   justify-items: center;
+  transition: 0.5s;
+  cursor: pointer;
 }
+
+.page-1Child:hover {
+  color: #E8AA31;
+  position: relative;
+  top: -7%;
+}
+
+.page-3Top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.page-3Top a {
+  color: rgb(73, 73, 73);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.parent4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 25px;
+  gap: 25px;
+  grid-row-gap: 25px;
+}
+
+.page-2Child {
+  box-shadow: 0px 0px 22px 6px rgba(34, 60, 80, 0.25);
+  display: flex;
+  padding: 5% 0 0 5%;
+  transition: 0.5s;
+}
+
+.page-2Child:hover {
+  filter: saturate(0%);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.page-2Border {
+  width: 30%;
+  border: 2px solid #E8AA31;
+}
+
+.page-2Img {
+  width: 95%;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,12 @@
+.page-3Top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.page-3Top a {
+  color: rgb(73, 73, 73);
+  text-decoration: none;
+  font-weight: 600;
+}
