@@ -6,6 +6,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 20px;
+  justify-items: center;
   grid-row-gap: 20px;
 
 }
@@ -33,7 +34,6 @@
   .page-6 {
     .page-6-body {
       grid-template-columns: 1fr;
-      justify-items: center;
     }
   }
 }

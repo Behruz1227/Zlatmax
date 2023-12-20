@@ -86,3 +86,12 @@
     }
   }
 }
+
+@media (max-width: "600px") {
+  .footer-top-text h3 {
+    font-size: 1rem;
+  }
+  .footer-top-text p {
+    font-size: 12px;
+  }
+}

@@ -10,28 +10,47 @@ html(lang="en")
         title Document
     body 
         div.main
-            nav.navbar.navbar-expand-lg.bg-body-tertiary(data-bs-theme="dark")
+            nav.navbar.navbar-expand-lg.bg-body-tertiary.md-navbar(data-bs-theme="dark")
                 .container-fluid
-                    a.navbar-brand(href='#') Navbar
+                    a.navbar-brand(href='#') 
+                        img.me-3(src="../../assets/page1/phone.png" alt=".")/
+                    a.navbar-brand(href='#') 
+                        img.me-3(src="../../assets/page1/avatar.png" alt=".")/
+                    a.navbar-brand(href='#') 
+                        img.me-3(src="../../assets/page1/like2.png" alt=".")/
+                    a.navbar-brand(href='#') 
+                        img.me-3(src="../../assets/page1/korzinka2.png" alt=".")/
                     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
                         span.navbar-toggler-icon
                     #navbarNavDropdown.collapse.navbar-collapse
                         ul.navbar-nav
                             li.nav-item
-                                a.nav-link.active(aria-current='page' href='#') Home
+                                a.nav-link(href='#') О нас
                             li.nav-item
-                                a.nav-link(href='#') Features
+                                a.nav-link(href='#') Оплата и доставка
                             li.nav-item
-                                a.nav-link(href='#') Pricing
+                                a.nav-link(href='#') Новости
+                            li.nav-item
+                                a.nav-link(href='#') Контакты
+                            li.nav-item
+                                a.nav-link(href='#')  Личный кабинет
                             li.nav-item.dropdown
                                 a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false') Dropdown link
-                            ul.dropdown-menu
-                                li
-                                    a.dropdown-item(href='#') Action
-                                li
-                                    a.dropdown-item(href='#') Another action
-                                li
-                                    a.dropdown-item(href='#') Something else here
+                                ul.dropdown-menu
+                                    li
+                                        a.dropdown-item(href='#') Каталог ножей
+                                    li
+                                        a.dropdown-item(href='#') Клинковое оружие
+                                    li
+                                        a.dropdown-item(href='#') Сувенирные изделия
+                                    li
+                                        a.dropdown-item(href='#') Фонари ARMYTEK
+                                    li
+                                        a.dropdown-item(href='#') Сопуствующие товары
+            nav.navbar.bg-body-tertiary.md-navbar
+                .container
+                    a.navbar-brand(href="#")
+                        img(src="../../assets/page1/logo.png" alt="logo").ms-3
 
             nav.topNav.navbar.navbar-expand-lg.bg-dark.border-bottom.border-body(data-bs-theme="dark")
                 Container.container
