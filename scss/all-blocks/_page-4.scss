@@ -1,6 +1,7 @@
 .page-4 {
   margin-top: 5%;
   background-image: url(../../assets/page1/pag-1Back.png);
+  background-size: cover;
 }
 
 .page-4-cards {
@@ -67,4 +68,10 @@
   color: #ffde07;
 }
 
-
+@media (max-width: "600px") {
+  .page-4 {
+    .page-4-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+}

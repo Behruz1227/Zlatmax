@@ -1,6 +1,5 @@
-
 .page-2 {
-  margin-top: 5%  ;
+  margin-top: 5%;
 }
 .parent4 {
   display: grid;
@@ -21,16 +20,34 @@
 }
 
 .page-2Child:hover {
-    filter: saturate(0%);
-    transform: scale(1.1);
-    cursor: pointer;
+  filter: saturate(0%);
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .page-2Border {
-    width: 30%;
-    border: 2px solid #E8AA31;
+  width: 30%;
+  border: 2px solid #e8aa31;
 }
 
 .page-2Img {
-    width: 95%;
+  width: 95%;
+}
+
+@media (max-width: "600px") {
+  .page-2 {
+    .parent4 {
+      grid-template-columns: 1fr;
+      
+    }
+
+    .page-2Child {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .page-2Img {
+    width: 70%;
+  }
 }

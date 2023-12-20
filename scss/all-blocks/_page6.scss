@@ -6,7 +6,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 20px;
-  grid-row-gap: 0px;
+  grid-row-gap: 20px;
+
 }
 
 .page-6-child img {
@@ -26,4 +27,13 @@
 .page-6-child:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+@media (max-width: "600px") {
+  .page-6 {
+    .page-6-body {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
 }
