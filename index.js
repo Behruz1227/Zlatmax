@@ -4,9 +4,9 @@ function changeImage() {
 
     if (birinchiRasm.style.display !== 'none') {
       birinchiRasm.style.display = 'none';
-      ikkinchiRasm.style.display = 'inline';
+      ikkinchiRasm.style.display = 'inline-block';
     } else {
-      birinchiRasm.style.display = 'inline';
+      birinchiRasm.style.display = 'inline-block';
       ikkinchiRasm.style.display = 'none';
     }
   }

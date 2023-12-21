@@ -81,7 +81,8 @@ html(lang="en")
                         div.navCenDiv 
                             img(src="../../assets/page1/location.png" alt=".").location
                         div.navCenDiv.d-flex.justify-content-end 
-                            img(src="../../assets/page1/like.svg" alt=".").like
+                            img#birinchiRasm(src="../../assets/page1/like.svg" alt="." onclick="changeImage()").like
+                            img#ikkinchiRasm(src="../../assets/page1/like2.svg" alt="." style="display: none;" onclick="changeImage()").like   
                         div.navCenDiv.d-flex
                             img(src="../../assets/page1/korzinka.png" alt=".").like.mb-3.ms-4
                             div.ms-3.mb-3.korText
@@ -257,7 +258,9 @@ html(lang="en")
                                     span  
                                         img(src="./assets/page3/tarozi.svg" alt=".")
                                     span.ms-2  
-                                        img(src="./assets/page3/Vector.svg" alt="..")
+                                        img#birinchiRasm(src="./assets/page3/Vector.svg" alt="." onclick="changeImage()")
+                                        img#ikkinchiRasm(src="./assets/page3/like2.svg" alt="." style="display: none;" onclick="changeImage()")
+                                        
                             .d-flex.justify-content-center
                                 button.card-btn.mt-3 В корзину 
                                     img(src="./assets/page3/korzinka.svg" style="width:20px; margin-left:6px; margin-right:3px; flex-direction: row;")
