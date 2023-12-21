@@ -1,16 +1,12 @@
-page2Card = [
-    {
-        title: "Среднеклинковое оружие",
-        li1: "Разделочные",
-        li1: "Разделочные",
-        li1: "Разделочные",
-        src: "./assets/page2/pichoq1.png"
-    },
-    {
-        title: "Среднеклинковое оружие",
-        li1: "Разделочные",
-        li1: "Разделочные",
-        li1: "Разделочные",
-        src: "./assets/page2/pichoq1.png"
+function changeImage() {
+    var birinchiRasm = document.getElementById('birinchiRasm');
+    var ikkinchiRasm = document.getElementById('ikkinchiRasm');
+
+    if (birinchiRasm.style.display !== 'none') {
+      birinchiRasm.style.display = 'none';
+      ikkinchiRasm.style.display = 'inline';
+    } else {
+      birinchiRasm.style.display = 'inline';
+      ikkinchiRasm.style.display = 'none';
     }
-]
+  }
